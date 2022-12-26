@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<purchase-order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                ship-cost="12.51" total-cost="28.20" xmlns="http://www.cpandl.com/purchase-order">
+  <order-date>5/24/2021</order-date>
+  <delivery-date day="14" month="9" xmlns="http://www.cpandl.com/delivery-date">
+    <year>2021</year>
+  </delivery-date>
+  <items xmlns="http://www.cpandl.com/purchase-order-item">
+    <order-item unit-price="5.23" quantity="3">
+      <order-item-name>Widget S</order-item-name>
+      <order-item-description>Small widget</order-item-description>
+    </order-item>
+  </items>
+  <destination-address name="Teresa Atkinson" ship-to-state="WA" zip="10204" xmlns="http://www.cpandl.com/address">
+    <ship-to-city>AnyTown</ship-to-city>
+    <ship-to-line1>1 Main St.</ship-to-line1>
+  </destination-address>
+</purchase-order>

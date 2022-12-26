@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+
+<book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      title="Pride And Prejudice" price="24.95" genre="novel" isbn="1-861001-57-8" publication-date="1823-01-28"
+      xmlns="http://contoso.com/book"/>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+
+<BookInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Title>Pride And Prejudice</Title>
+  <Price>24.95</Price>
+  <Genre>novel</Genre>
+  <Isbn>1-861001-57-8</Isbn>
+  <PublicationDate>1823-01-28</PublicationDate>
+</BookInfo>

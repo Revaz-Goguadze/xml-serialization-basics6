@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+    <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NoWarn>CA1707</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\stylecop.json" Link="Properties\stylecop.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\XmlSerializationBasics\XmlSerializationBasics.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.SDK" Version="17.0.0" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="XMLUnit.Core" Version="2.9.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Arrays\arrays.xml"/>
+    <EmbeddedResource Include="Arrays\arrays.xml"/>
+    <None Remove="ComplexStructures\complex-structures.xml"/>
+    <EmbeddedResource Include="ComplexStructures\complex-structures.xml"/>
+    <None Remove="SerializationWithXmlRoot\serialization-with-xml-root.xml"/>
+    <EmbeddedResource Include="PurchaseOrderExample\purchase-order.xml"/>
+    <EmbeddedResource Include="Sequence\sequence.xml"/>
+    <EmbeddedResource Include="SerializationWithOrder\serialization-with-xml-root.xml"/>
+    <None Remove="FieldsSerialization\fields-serialization.xml"/>
+    <EmbeddedResource Include="FieldsSerialization\fields-serialization.xml"/>
+    <None Remove="SerializationWithXmlElement\serialization-with-xml-element.xml"/>
+    <EmbeddedResource Include="SerializationWithXmlElement\serialization-with-xml-element.xml"/>
+    <None Remove="SerializationWithXmlAttributes\serialization-with-xml-attributes.xml"/>
+    <EmbeddedResource Include="SerializationWithXmlAttributes\serialization-with-xml-attributes.xml"/>
+    <None Remove="SerializationWithoutAttributes\serialization-without-attributes.xml"/>
+    <EmbeddedResource Include="SerializationWithoutAttributes\serialization-without-attributes.xml"/>
+  </ItemGroup>
+</Project>
