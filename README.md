@@ -107,7 +107,7 @@ public string Title { get; set; }
 
 ### 4. Serialize a Class with Fields
 
-Apply the `XmlRootAttribute` attribute to the [FieldsSerialization/BookInfo](XmlSerializationBasics/FieldsSerialization/BookInfo.cs) class to set `book-info` as the name for the root XML element and [contoso.com/book-info](http://contoso.com/book-info) URI as the namespace.
+Apply the `XmlRootAttribute` attribute to the [FieldsSerialization/BookInfo](XmlSerializationBasics/FieldsSerialization/BookInfo.cs) class to set `book.info` as the name for the root XML element and [contoso.com/book-info](http://contoso.com/book-info) URI as the namespace.
 
 | XML Root Element Name | XML Root Element Namespace   |
 |-----------------------|------------------------------|
