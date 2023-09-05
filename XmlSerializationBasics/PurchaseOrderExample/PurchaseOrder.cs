@@ -2,21 +2,29 @@ using System.Xml.Serialization;
 
 namespace XmlSerializationBasics.PurchaseOrderExample
 {
+    [XmlRoot("purchase-order", Namespace = "http://www.cpandl.com/purchase-order")]
     public class PurchaseOrder
     {
-        public Address? ShipTo { get; set; }
-
+        [XmlElement("order-date")]
         public string? OrderDate { get; set; }
 
-        public DeliveryDate? DeliveryDate { get; set; }
-
-        public OrderedItem[]? OrderedItems { get; set; }
-
-        public decimal SubTotal { get; set; }
-
+        [XmlElement("ship-cost")]
         public decimal ShipCost { get; set; }
 
+        [XmlAttribute("total-cost")]
         public decimal TotalCost { get; set; }
+
+        [XmlElement("delivery-date", Namespace = "http://www.cpandl.com/delivery-date")]
+        public DeliveryDate? DeliveryDate { get; set; }
+
+        [XmlArray("items", Namespace = "http://www.cpandl.com/purchase-order-item")]
+        [XmlArrayItem("order-item")]
+        public OrderedItem[]? OrderedItems { get; set; }
+
+        [XmlElement("destination-address")]
+        public Address? ShipTo { get; set; }
+
+        public decimal SubTotal { get; set; }
 
         public void CalculateSubTotal()
         {
