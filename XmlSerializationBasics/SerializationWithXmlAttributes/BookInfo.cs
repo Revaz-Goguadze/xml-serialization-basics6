@@ -7,18 +7,18 @@ namespace XmlSerializationBasics.SerializationWithXmlAttributes
     {
         // Auto-implemented properties with public access modifier and XmlAttribute attributes
         [XmlAttribute("title")]
-        public string Title { get; set; }
+        public string Title { get; set; } = null!;
 
         [XmlAttribute("price")]
         public decimal Price { get; set; }
 
         [XmlAttribute("genre")]
-        public string Genre { get; set; }
+        public string Genre { get; set; } = null!;
 
         [XmlAttribute("isbn")]
-        public string Isbn { get; set; }
+        public string Isbn { get; set; } = null!;
 
         [XmlAttribute("publication-date")]
-        public string PublicationDate { get; set; }
+        public string PublicationDate { get; set; } = null!;
     }
 }
